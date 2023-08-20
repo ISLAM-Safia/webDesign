@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* Your existing inline styles */
-        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- Box icon -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- font family -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!-- custom css  -->
+        <link rel="stylesheet" href="style.css">
+        <style>
+            
 * {
     margin: 0;
     padding: 0;
@@ -210,12 +213,10 @@ section .profile {
   }
   .skills-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 50vw;
     color: dimgray;
-    
     
    
   }
@@ -236,7 +237,6 @@ section .profile {
     font-size: 1.5rem;
     position: relative;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
-
 
   }
 
@@ -370,72 +370,121 @@ input {
   margin-right: 10rem;
 }
 
-    </style>
+@media screen and (min-width: 1440px) {
+            .profile {
+                flex-direction: row;
+                margin: 4rem;
+            }
+            .profile .left {
+                flex: 1;
+            }
+            .profile .right {
+                flex: 2;
+            }
+            /* وأي تعديلات أخرى تحتاجها */
+        }
+
+        /* تعديلات لأجهزة الكمبيوتر الصغيرة والأجهزة اللوحية */
+        @media screen and (max-width: 1439px) {
+            .profile {
+                flex-direction: column;
+                margin: 3rem;
+            }
+            /* وأي تعديلات أخرى تحتاجها */
+        }
+
+        /* تعديلات للهواتف الذكية */
+        @media screen and (max-width: 767px) {
+            .profile {
+                margin: 2rem;
+            }
+            /* وأي تعديلات أخرى تحتاجها */
+        }
+        </style>
 </head>
 <body>
-    <section>
-        <div class="profile">
+    <section >
+        <div class="profile" >
+            <div class="col-md-4">
             <div class="left">
-                <div class="profile-img"><img src="images/18 Celebrities Morphed Into Stunningly Perfect People.jpg" alt=""></div>
+                <div class="profile-img"><img src="images/18 Celebrities Morphed Into Stunningly Perfect People.jpg"  alt=""></div>
                 <div>
-                    <div class="resume">
-                        <i class='bx bxs-cloud-download'></i>
-                        <span style="text-transform: uppercase;">download resume</span>
-                    </div><br>
-                    <div class="freelanc">
-                        <i class='bx bx-check'></i>
-                        available on freelancer
+                    <div class="resume" style="margin-top: 2rem;">
+                        <i class='bx bxs-cloud-download' ></i>
+                        <span style="text-transform: uppercase;">download resume</span></div><br>
+                    <div  class="freelanc" >
+                        <i  class='bx bx-check'></i>
+                    available on freelancer
                     </div>
                 </div>
             </div>
+    
+            
+
             <div class="right">
-                <h1>hi i'm <span style="color: #0586ce;" class="multiple-text"></span></h1>
+                <h1>hi i^m  <span style="color: #0586ce;" class="multiple-text" > </span></h1>
                 <p class="title-p">web developer & web designer</p>
                 <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, omnis porro quibusdam numquam totam architecto quae illo veritatis odit vero voluptatem excepturi quod esse illum vel quia adipisci hic nulla ducimus minus pariatur! Obcaecati non adipisci quas hic provident optio?</p>
                 <table>
                     <tr>
-                        <td class="capital gray-color font-td">age</td>
-                        <td>26</td>
-                        <td class="capital gray-color font-td">phone</td>
-                        <td>+059738578</td>
+                      <td class=" capital gray-color  .font-td">age</td>
+                      <td>26</td>
+                      <td class=" capital gray-color  .font-td">phone</td>
+                      <td>+059738578</td>
                     </tr>
                     <tr>
-                        <td class="capital gray-color font-td">address</td>
-                        <td>632, London, Earth, BE, 45</td>
-                        <td class="capital gray-color font-td">website</td>
-                        <td>www.mushtaha.com</td>
+                      <td class=" capital gray-color  .font-td " >adress</td>
+                      <td>632,London,Earth,BE,45</td>
+                      <td class="capital gray-color  .font-td" >website</td>
+                      <td>www.mushtaha.com</td>
                     </tr>
                     <tr>
-                        <td class="capital gray-color font-td">email</td>
-                        <td class="capital">mohamed7.ps@hotmail.com</td>
-                        <td class="capital gray-color font-td">nationality</td>
-                        <td class="capital">American</td>
+                      <td class="capital gray-color  .font-td" >email</td>
+                      <td class="capital ">mohamed7.ps@hotmail.com</td>
+                      <td class="capital gray-color  .font-td" >nataly</td>
+                      <td class="capital ">american</td>
                     </tr>
-                </table>
-                <div class="social-media">
-                    <p>social links</p>
+                  </table>
+                  <div class="social-media">
+                    <p>social link</p>
                     <div class="social-icons">
                         <div class="icon-box">
-                            <span class="icon"><i class='bx bxl-facebook'></i></span>
+                          <span class="icon"><i  class='bx bxl-facebook' ></i></span>
                         </div>
                         <div class="icon-box">
-                            <span class="icon"><i class='bx bxl-twitter'></i></span>
+                          <span class="icon"><i  class='bx bxl-twitter' ></i></span>
                         </div>
                         <div class="icon-box">
-                            <span class="icon"><i class='bx bxl-google'></i></span>
+                          <span class="icon"><i  class='bx bxl-google' ></i></span>
                         </div>
                         <div class="icon-box">
-                            <span class="icon"><i class='bx bxl-linkedin'></i></span>
+                          <span class="icon"><i  class='bx bxl-linkedin' ></i></span>
                         </div>
-                    </div>
-                </div>
+                        <div class="icon-box">
+                          <span class="icon"><i  class='bx bxl-facebook' ></i></span>
+                        </div>
+                        <div class="icon-box">
+                          <span class="icon"><i  class='bx bxl-facebook' ></i></span>
+                        </div>
+                        <div class="icon-box">
+                          <span class="icon"><i  class='bx bxl-facebook' ></i></span>
+                        </div>
+                      </div>
+                    <!-- <div class="social-icons">
+                        <i  class='bx bxl-facebook' ></i>
+                    </div> -->
+                  </div>
             </div>
         </div>
-    </section>
-    <section class="skills">
-        <h1 class="capital heading">skills</h1>
+    
+        <br><br>
+</section>
+
+
+<section class="skills"> 
+    <h1 class="capital heading ">skills</h1>
         <div class="skills-container">
-            <div class="prof-skills ">
+            <div class="prof-skills">
                 <div class="abs">
                     <p class="uppercase">professional skills</p>
                 </div>
@@ -477,6 +526,7 @@ input {
                   <progress id="js" value="90" max="100"></progress>
                 </div>
             </div>
+
 
             <div class="add-skills">
                 
@@ -561,27 +611,30 @@ input {
              
             </div>
         </div>
-    </section>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-        const typed = new Typed('.multiple-text', {
-            strings: ['roberts smith', 'roberts smith', 'roberts smith', 'roberts smith', 'roberts smith'],
-            typeSpeed: 100,
-            backSpeed: 100,
-            backDelay: 1000,
-            loop: true
-        });
+</section>
+            <!-- typed js -->
+            <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+                    <!-- scroll reveal -->
+            <script src="https://unpkg.com/scrollreveal"></script>
+            <script>
+                  const typed = new Typed('.multiple-text' ,{
+  strings : ['roberts smith ','roberts smith ','roberts smith ','roberts smith ','roberts smith ',],
+    typeSpeed : 100 ,
+    backSpeed : 100 ,
+    backDelay : 1000 ,
+    loop : true
+  });
 
-        ScrollReveal({
-            distance: '80px',
-            duration: 2000,
-            delay: 200
-        });
-        ScrollReveal().reveal('.profile, .heading', { origin: 'top' });
-        ScrollReveal().reveal('.profile-img img, .prof-skills', { origin: 'bottom' });
-        ScrollReveal().reveal('h1, .prof-skills, .skills p', { origin: 'left' });
-        ScrollReveal().reveal('h3, i, .profile p, .add-skills', { origin: 'right' });
-    </script>
-</body>
-</html>
+  ScrollReveal({ 
+    // reset: true ,
+    distance : '80px',
+    duration : 2000,
+    delay : 200
+  });
+  ScrollReveal().reveal('.profile , .heading ,.interests p', { origin: 'top' });
+  ScrollReveal().reveal(' .profile-img img,.education .edu-desc,.cont-btn, .prof-skills,.blog p, .blog-container , .portfolio-box , .team-wrapper  , .pricing-box', { origin: 'bottom' });
+  ScrollReveal().reveal(' h1  , .prof-skills,.pricing p ,.blog h2,.blog .read-more,.blog span ', { origin: 'left' });
+  ScrollReveal().reveal(' h3 ,i ,.profile p ,.add-skills ', { origin: 'right' });
+            </script>
+            </body>
+            </html>

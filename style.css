@@ -22,13 +22,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 1200px;
+    margin: 2rem auto;
 }
 
 
 /* profile section */
 .profile {
   width: 120rem;
-    height: 40vh;
+    /* height: 90vh; */
     display: flex;
     margin: 7rem ; 
     padding: 5rem;
@@ -49,18 +51,16 @@ section .profile {
 }
 .profile .profile-img{
   /* width: 300px;*/
-  height: 280px; 
+  height: 600px; 
   object-fit: cover;
   
 }
 
 .profile-img  img{
   width: 400px;
-  height: 430px;
-  /* height: 600px; */
+  /* height: 430px; */
+  height: 550px;
   box-shadow: 1rem .3rem 2rem rgba(0, 0, 0, 0.8);
-
-
 }
 
 
@@ -74,7 +74,7 @@ section .profile {
     text-transform: uppercase;
     box-shadow: 1rem .3rem 2rem rgba(0, 0, 0, 0.8);
       height: 70px;
-      margin-top: 2rem;
+      /* margin-top: 2rem; */
       text-align: center;
   }
   .resume i {
